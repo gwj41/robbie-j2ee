@@ -1,5 +1,6 @@
 package com.exigen.robbie.service.impl;
 
+import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 
@@ -16,7 +17,6 @@ import com.exigen.robbie.service.IWebserviceTest;
 @Transactional
 public class WebserviceTest implements IWebserviceTest {
 
-	@Override
 	public String sayHello(@WebParam(name="username"
 			) String username) {
 		return "hello, my baby " + username;
